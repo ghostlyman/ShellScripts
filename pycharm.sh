@@ -8,10 +8,10 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Install Java
-yum -y install java-1.8.0-openjdk-headless.x86_64
+yum -y install java-1.8.0-openjdk-headless.x86_64 wget
 
 # Download PyCharm
-if [ ! f /tmp/pycharm.tar.gz ]; then
+if [ ! -f /tmp/pycharm.tar.gz ]; then
     wget -O /tmp/pycharm.tar.gz "https://download.jetbrains.com/python/pycharm-community-$VERSION.tar.gz"
 fi
 
