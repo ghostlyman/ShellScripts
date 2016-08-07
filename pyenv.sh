@@ -6,7 +6,8 @@ if [ $EUID -ne 0 ]; then
 fi
 
 # Install git tools
-yum -y install git gcc 
+yum -y install git gcc openssl openssl-devel
+yum -y groupinstall "Development tools"
 
 # Clone pyenv to root local home directory
 cd ~
