@@ -6,7 +6,7 @@ if [ $EUID -ne 0 ]; then
 fi
 
 # Install git tools
-yum -y install git
+yum -y install git gcc 
 
 # Clone pyenv to root local home directory
 cd ~
