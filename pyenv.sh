@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# Only Root privilege can run this script
 if [ $EUID -ne 0 ]; then
     echo "Please run as root privilege"
     exit 1
