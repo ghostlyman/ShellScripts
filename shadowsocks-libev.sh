@@ -209,7 +209,7 @@ pre_install(){
     echo "Press any key to start...or press Ctrl+C to cancel"
     char=`get_char`
     #Install necessary dependencies
-    yum install -y unzip autoconf automake make zlib-devel libtool libevent xmlto asciidoc pcre pcre-devel openssl-devel gcc perl perl-devel cpio expat-devel gettext-devel
+    yum install -y unzip autoconf automake make zlib-devel libtool libevent xmlto asciidoc pcre pcre-devel openssl-devel gcc perl perl-devel cpio expat-devel gettext-devel firewalld
     echo
     cd ${cur_dir}
 }
